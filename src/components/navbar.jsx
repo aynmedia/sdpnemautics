@@ -7,11 +7,14 @@ import { Button } from "./ui/button";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav className="bg-white shadow-sm text-black">
       <div className="container mx-auto flex justify-between items-center">
+        {/* Logo */}
         <div className="text-2xl font-bold">LOGO</div>
-        {/*  Hamburger menu */}
+
+        {/* Hamburger menu for mobile */}
         <div className="md:hidden">
           <Button
             onClick={() => setIsOpen(!isOpen)}
@@ -24,6 +27,8 @@ function Navbar() {
             )}
           </Button>
         </div>
+
+        {/* Links for desktop */}
         <div className="hidden md:flex space-x-4">
           {menuItems.map((item) => (
             <a
@@ -35,15 +40,23 @@ function Navbar() {
             </a>
           ))}
         </div>
-        {/*  Mobile menu */}
+
+        {/* Mobile menu */}
         {isOpen && (
-          <div className="fixed inset-0 z-10 flex items-center justify-center bg-black bg-opacity-50">
-            <div className="w-full max-w-md p-4 space-y-4 bg-white">
+          <div
+            className="fixed inset-0 z-10 flex items-center justify-center bg-black bg-opacity-50"
+            onClick={() => setIsOpen(false)}
+          >
+            <div
+              className="w-full max-w-md p-4 space-y-4 bg-white"
+              onClick={(e) => e.stopPropagation()}
+            >
               {menuItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-gray-900 font-bold"
+                  className="block text-gray-700 hover:text-gray-900 font-bold"
+                  onClick={() => setIsOpen(false)}
                 >
                   {item.name}
                 </a>
