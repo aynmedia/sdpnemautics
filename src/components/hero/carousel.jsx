@@ -47,7 +47,7 @@ const Carousel = ({ slides, interval = 10000 }) => {
                 : 'bg-btransparent scale-100 text-gray-900'
             }`}>
             <span
-              className={`text-sm ${
+              className={`text-sm font-spaceGrotesk ${
                 currentIndex === index ? 'text-yellow-300' : 'text-white'
               }`}>
               {String(index + 1).padStart(2, '0')}
@@ -68,7 +68,7 @@ const Carousel = ({ slides, interval = 10000 }) => {
           className='rounded-lg shadow-lg'
         />
         {/* Slide Description */}
-        <div className='absolute bottom-4 right-24 text-white p-4 mb-12 flex flex-col gap-4 md:max-w-2xl'>
+        <div className='absolute bottom-4 right-24 text-white font-spaceGrotesk p-4 mb-12 flex flex-col gap-4 md:max-w-2xl'>
           <div className='text-5xl font-bold'>{slides[currentIndex].title}</div>
           <div className=''>{slides[currentIndex].description}</div>
         </div>

@@ -1,5 +1,6 @@
 /** @format */
 
+import Footer from '@/components/footer';
 import './globals.css';
 import Navbar from '@/components/navbar';
 
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
       <body className='font-sans'>
         <Navbar />
         <div className='overflow-hidden'>{children}</div>
+        <Footer />
       </body>
     </html>
   );

@@ -5,6 +5,7 @@ import Hero from '@/components/hero/hero';
 import About from '@/components/ui/about';
 import Company from '@/components/ui/companydetails';
 import AppleCardsCarousel from '@/components/ui/masonryfgrid';
+import Stats from '@/components/ui/stats';
 import Whyus from '@/components/ui/whyus';
 
 export default function Home() {
@@ -23,6 +24,9 @@ export default function Home() {
           WHAT ARE YOU LOOKING FOR?
         </h1>
         <CategoryBento />
+      </section>
+      <section className='w-full text-center gap-6'>
+        <Stats />
       </section>
       <section className='w-full text-center gap-6'>
         <Company />

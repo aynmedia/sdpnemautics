@@ -1,0 +1,193 @@
+
+[
+  {
+    "title": "Lubricated Reciprocating Air Compressor",
+    "category": "Compressors",
+    "description":
+      "The Lubricated Reciprocating Air Compressor is a high-performance compressor that delivers maximum efficiency and reliability. It is designed to meet the demands of a wide range of industrial applications, from small-scale manufacturing to large-scale industrial processes.",
+    "image": "assets/images/SDP_AC_Img_1.webp",
+    "location": "Worldwide",
+    "features": ["Lubrication", "Air Compression", "High Efficiency"],
+    "business_type": "Manufacturing"
+  },
+  {
+    "title": "Lubricated Screw Type Air Compressor",
+    "category": "Compressors",
+    "description":
+      "The Lubricated Screw Type Air Compressor is a high-performance compressor that delivers maximum efficiency and reliability. It is designed to meet the demands of a wide range of industrial applications, from small-scale manufacturing to large-scale industrial processes.",
+    "image": "assets/images/SDP_AC_Img_2.webp",
+    "location": "Worldwide",
+    "features": ["Lubrication", "Air Compression", "High Efficiency"],
+    "business_type": "Manufacturing"
+  },
+  {
+    "title": "Oil Free Claw Type Air Compressor",
+    "category": "Compressors",
+    "description":
+      "The Oil Free Claw Type Air Compressor is a high-performance compressor that delivers maximum efficiency and reliability. It is designed to meet the demands of a wide range of industrial applications, from small-scale manufacturing to large-scale industrial processes.",
+    "image": "assets/images/SDP_AC_Img_3.webp",
+    "location": "Worldwide",
+    "features": ["Oil Free", "Air Compression", "High Efficiency"],
+    "business_type": "Manufacturing"
+  },
+  {
+    "title": "Oil Free Reciprocating Air Compressor",
+    "category": "Compressors",
+    "description":
+      "The Oil Free Reciprocating Air Compressor is a high-performance compressor that delivers maximum efficiency and reliability. It is designed to meet the demands of a wide range of industrial applications, from small-scale manufacturing to large-scale industrial processes.",
+    "image": "assets/images/SDP_AC_Img_4.webp",
+    "location": "Worldwide",
+    "features": ["Oil Free", "Air Compression", "High Efficiency"],
+    "business_type": "Manufacturing"
+  },
+  {
+    "title": "Oil Free Screw Type Air Compressor",
+    "category": "Compressors",
+    "description":
+      "The Oil Free Screw Type Air Compressor is a high-performance compressor that delivers maximum efficiency and reliability. It is designed to meet the demands of a wide range of industrial applications, from small-scale manufacturing to large-scale industrial processes.",
+    "image": "assets/images/SDP_AC_Img_5.webp",
+    "location": "Worldwide",
+    "features": ["Oil Free", "Air Compression", "High Efficiency"],
+    "business_type": "Manufacturing"
+  },
+  {
+    "title": "Scroll Type Oil Free Air Compressor",
+    "category": "Compressors",
+    "description":
+      "The Scroll Type Oil Free Air Compressor is a high-performance compressor that delivers maximum efficiency and reliability. It is designed to meet the demands of a wide range of industrial applications, from small-scale manufacturing to large-scale industrial processes.",
+    "image": "assets/images/SDP_AC_Img_6.webp",
+    "location": "Worldwide",
+    "features": ["Oil Free", "Air Compression", "High Efficiency"],
+    "business_type": "Manufacturing"
+  },
+  {
+    "title": "Dry Scroll Vacuum Pump",
+    "category": "Compressors",
+    "description":
+      "The Dry Scroll Vacuum Pump is a high-performance compressor that delivers maximum efficiency and reliability. It is designed to meet the demands of a wide range of industrial applications, from small-scale manufacturing to large-scale industrial processes.",
+    "image": "assets/images/Dry_Scroll_Vaccum_Pump.webp",
+    "location": "Worldwide",
+    "features": ["Dry Scroll", "Vacuum Pump", "High Efficiency"],
+    "business_type": "Manufacturing"
+  },
+  {
+    "title": "Lubricating Reciprocating Vacuum Pump",
+    "category": "",
+    "description":
+      "The Lubricating Reciprocating Vacuum Pump is a high-performance compressor that delivers maximum efficiency and reliability. It is designed to meet the demands of a wide range of industrial applications, from small-scale manufacturing to large-scale industrial processes.",
+    "image": "assets/images/Lubricating_Reciprocating_Vaccum_Pump.webp",
+    "location": "Worldwide",
+    "features": ["Lubrication", "Air Compression", "High Efficiency"],
+    "business_type": "Manufacturing"
+  },
+  {
+    "title": "Refrigerant Type Air Dryer",
+    "category": "Dryers",
+    "description":
+      "The Refrigerant Type Air Dryer is a high-performance dryer that delivers maximum efficiency and reliability. It is designed to meet the demands of a wide range of industrial applications, from small-scale manufacturing to large-scale industrial processes.",
+    "image": "assets/images/Refrigerant_Type_Air_Dryer.webp",
+    "location": "Worldwide",
+    "features": ["Refrigerant Type", "Air Drying", "High Efficiency"],
+    "business_type": "Manufacturing"
+  },
+  {
+    "title": "Desiccant Air Dryer",
+    "category": "Dryers",
+    "description":
+      "The Desiccant Air Dryer is a high-performance dryer that delivers maximum efficiency and reliability. It is designed to meet the demands of a wide range of industrial applications, from small-scale manufacturing to large-scale industrial processes.",
+    "image": "assets/images/Desiccant_Air_Dryer.webp",
+    "location": "Worldwide",
+    "features": ["Desiccant", "Air Drying", "High Efficiency"],
+    "business_type": "Manufacturing"
+  },
+  {
+    "title": "Air Cooled Chiller",
+    "category": "Dryers",
+    "description":
+      "The Air Cooled Chiller is a high-performance dryer that delivers maximum efficiency and reliability. It is designed to meet the demands of a wide range of industrial applications, from small-scale manufacturing to large-scale industrial processes.",
+    "image": "assets/images/Air_Cooled_Chiller.webp",
+    "location": "Worldwide",
+    "features": ["Air Cooled", "Chiller", "High Efficiency"],
+    "business_type": "Manufacturing"
+  },
+  {
+    "title": "Air Blast Cooling System",
+    "category": "Dryers",
+    "description":
+      "The Air Blast Cooling System is a high-performance dryer that delivers maximum efficiency and reliability. It is designed to meet the demands of a wide range of industrial applications, from small-scale manufacturing to large-scale industrial processes.",
+    "image": "assets/images/Air_Blast_Cooling_System_Chiller.webp",
+    "location": "Worldwide",
+    "features": ["Air Blast", "Cooling System", "High Efficiency"],
+    "business_type": "Manufacturing"
+  },
+  {
+    "title": "Panel Air Conditioner",
+    "category": "Dryers",
+    "description":
+      "The Panel Air Conditioner is a high-performance dryer that delivers maximum efficiency and reliability. It is designed to meet the demands of a wide range of industrial applications, from small-scale manufacturing to large-scale industrial processes.",
+    "image": "assets/images/PAnel_Air_Conditioners.webp",
+    "location": "Worldwide",
+    "features": ["Panel", "Air Conditioner", "High Efficiency"],
+    "business_type": "Manufacturing"
+  },
+  {
+    "title": "Air Blast Oil Cooler",
+    "category": "Dryers",
+    "description":
+      "The Air Blast Oil Cooler is a high-performance dryer that delivers maximum efficiency and reliability. It is designed to meet the demands of a wide range of industrial applications, from small-scale manufacturing to large-scale industrial processes.",
+    "image": "assets/images/Air_Blast_Oil_Coolers.webp",
+    "location": "Worldwide",
+    "features": ["Air Blast", "Oil Cooler", "High Efficiency"],
+    "business_type": "Manufacturing"
+  },
+  {
+    "title": "Refrigerated Oil Cooler",
+    "category": "Dryers",
+    "description":
+      "The Refrigerated Oil Cooler is a high-performance dryer that delivers maximum efficiency and reliability. It is designed to meet the demands of a wide range of industrial applications, from small-scale manufacturing to large-scale industrial processes.",
+    "image": "assets/images/Refrigerated_Type_Air_Dryer.webp",
+    "location": "Worldwide",
+    "features": ["Refrigerated", "Oil Cooler", "High Efficiency"],
+    "business_type": "Manufacturing"
+  },
+  {
+    "title": "Refrigerated Oil Cooler",
+    "category": "Dryers",
+    "description":
+      "The Refrigerated Oil Cooler is a high-performance dryer that delivers maximum efficiency and reliability. It is designed to meet the demands of a wide range of industrial applications, from small-scale manufacturing to large-scale industrial processes.",
+    "image": "assets/images/Refrigerated_Type_Air_Dryer.webp",
+    "location": "Worldwide",
+    "features": ["Refrigerated", "Oil Cooler", "High Efficiency"],
+    "business_type": "Manufacturing"
+  },
+  {
+    "title": "Heavy Duty Exhaust Fan",
+    "category": "Dryers",
+    "description":
+      "The Heavy Duty Exhaust Fan is a high-performance dryer that delivers maximum efficiency and reliability. It is designed to meet the demands of a wide range of industrial applications, from small-scale manufacturing to large-scale industrial processes.",
+    "image": "assets/images/Heavy_Duty_Exhaust_Fan.webp",
+    "location": "Worldwide",
+    "features": ["Heavy Duty", "Exhaust Fan", "High Efficiency"],
+    "business_type": "Manufacturing"
+  },
+  {
+    "title": "Air Circulator Fan",
+    "category": "Dryers",
+    "description":
+      "The Air Circulator Fan is a high-performance dryer that delivers maximum efficiency and reliability. It is designed to meet the demands of a wide range of industrial applications, from small-scale manufacturing to large-scale industrial processes.",
+    "image": "assets/images/Air_Circulator_Fan.webp",
+    "location": "Worldwide",
+    "features": ["Air Circulator", "Fan", "High Efficiency"],
+    "business_type": "Manufacturing"
+  },
+  {
+    "title": "Air Curtain Fan",
+    "category": "Dryers",
+    "description":
+      "The Air Curtain Fan is a high-performance dryer that delivers maximum efficiency and reliability. It is designed to meet the demands of a wide range of industrial applications, from small-scale manufacturing to large-scale industrial processes.",
+    "image": "assets/images/Air_Curtain_Fan.webp",
+    "location": "Worldwide",
+    "features": ["Air Curtain", "Fan", "High Efficiency"],
+    "business_type": "Manufacturing"
+  }
+]
