@@ -88,7 +88,7 @@ function Navbar() {
                       onMouseLeave={toggleMegaMenu}>
                       <Link
                         href={item.href}
-                        className='bg-white py-4 md:py-0  hover:underline hover:text-blue-600 hover:decoration-4 font-bold hover:underline-offset-8 shadow-md md:bg-transparent md:shadow-none block pl-3 pr-4 rounded md:p-4 focus:outline-none uppercase transition duration-150 ease-in-out'>
+                        className='bg-white py-4 md:py-0  hover:underline hover:text-green hover:decoration-4 font-bold hover:underline-offset-8 shadow-md md:bg-transparent md:shadow-none block pl-3 pr-4 rounded md:p-4 focus:outline-none uppercase transition duration-150 ease-in-out'>
                         {item.name}
                       </Link>
                       {isMegaMenuOpen && (
@@ -104,7 +104,7 @@ function Navbar() {
                                   <li key={linkIdx} className='mb-2'>
                                     <Link
                                       href={link.href}
-                                      className=' hover:text-blue-600  font-bold'>
+                                      className=' hover:text-green  font-bold'>
                                       {link.label}
                                     </Link>
                                   </li>
@@ -118,7 +118,7 @@ function Navbar() {
                   ) : (
                     <Link
                       href={item.href}
-                      className='bg-white py-4 md:py-0  hover:underline hover:text-blue-600 hover:decoration-4 hover:underline-offset-8 shadow-md md:bg-transparent md:shadow-none block pl-3 pr-4 rounded md:p-4 focus:outline-none uppercase transition duration-150 ease-in-out'>
+                      className='bg-white py-4 md:py-0  hover:underline hover:text-green hover:decoration-2 hover:underline-offset-8 shadow-md md:bg-transparent md:shadow-none block pl-3 pr-4 rounded md:p-4 focus:outline-none uppercase transition duration-150 ease-in-out'>
                       {item.name}
                     </Link>
                   )}

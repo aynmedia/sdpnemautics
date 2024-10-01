@@ -67,6 +67,7 @@ const Carousel = ({ slides, interval = 10000 }) => {
           objectFit='cover'
           className='rounded-lg shadow-lg'
         />
+        <div className='absolute top-0 left-0 w-full h-full bg-green-800 opacity-80'></div>
         {/* Slide Description */}
         <div className='absolute bottom-4 right-24 text-white font-spaceGrotesk p-4 mb-12 flex flex-col gap-4 md:max-w-2xl'>
           <div className='text-5xl font-bold'>{slides[currentIndex].title}</div>

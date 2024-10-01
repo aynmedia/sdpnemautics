@@ -12,6 +12,7 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+
   theme: {
     extend: {
       fontFamily: {
@@ -19,6 +20,7 @@ module.exports = {
         spaceGrotesk: ['"Space Grotesk"', 'sans-serif'],
       },
       colors: {
+        green: '#65B530',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {

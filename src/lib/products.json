@@ -1,6 +1,7 @@
 
 [
   {
+    "id": 1,
     "title": "Lubricated Reciprocating Air Compressor",
     "category": "Compressors",
     "description":
@@ -11,6 +12,7 @@
     "business_type": "Manufacturing"
   },
   {
+    "id": 2,
     "title": "Lubricated Screw Type Air Compressor",
     "category": "Compressors",
     "description":
@@ -21,6 +23,7 @@
     "business_type": "Manufacturing"
   },
   {
+    "id": 3,
     "title": "Oil Free Claw Type Air Compressor",
     "category": "Compressors",
     "description":
@@ -31,6 +34,7 @@
     "business_type": "Manufacturing"
   },
   {
+    "id": 4,
     "title": "Oil Free Reciprocating Air Compressor",
     "category": "Compressors",
     "description":
@@ -41,6 +45,7 @@
     "business_type": "Manufacturing"
   },
   {
+    "id": 5,
     "title": "Oil Free Screw Type Air Compressor",
     "category": "Compressors",
     "description":
@@ -51,6 +56,7 @@
     "business_type": "Manufacturing"
   },
   {
+    "id": 6,
     "title": "Scroll Type Oil Free Air Compressor",
     "category": "Compressors",
     "description":
@@ -61,6 +67,7 @@
     "business_type": "Manufacturing"
   },
   {
+    "id": 7,
     "title": "Dry Scroll Vacuum Pump",
     "category": "Compressors",
     "description":
@@ -71,6 +78,7 @@
     "business_type": "Manufacturing"
   },
   {
+    "id": 8,
     "title": "Lubricating Reciprocating Vacuum Pump",
     "category": "",
     "description":
@@ -81,6 +89,7 @@
     "business_type": "Manufacturing"
   },
   {
+    "id": 9,
     "title": "Refrigerant Type Air Dryer",
     "category": "Dryers",
     "description":
@@ -91,6 +100,7 @@
     "business_type": "Manufacturing"
   },
   {
+    "id": 10,
     "title": "Desiccant Air Dryer",
     "category": "Dryers",
     "description":
@@ -101,6 +111,7 @@
     "business_type": "Manufacturing"
   },
   {
+    "id": 11,
     "title": "Air Cooled Chiller",
     "category": "Dryers",
     "description":
@@ -111,6 +122,7 @@
     "business_type": "Manufacturing"
   },
   {
+    "id": 12,
     "title": "Air Blast Cooling System",
     "category": "Dryers",
     "description":
@@ -121,6 +133,7 @@
     "business_type": "Manufacturing"
   },
   {
+    "id": 13,
     "title": "Panel Air Conditioner",
     "category": "Dryers",
     "description":
@@ -131,6 +144,7 @@
     "business_type": "Manufacturing"
   },
   {
+    "id": 14,
     "title": "Air Blast Oil Cooler",
     "category": "Dryers",
     "description":
@@ -141,6 +155,7 @@
     "business_type": "Manufacturing"
   },
   {
+    "id": 15,
     "title": "Refrigerated Oil Cooler",
     "category": "Dryers",
     "description":
@@ -151,6 +166,7 @@
     "business_type": "Manufacturing"
   },
   {
+    "id": 16,
     "title": "Refrigerated Oil Cooler",
     "category": "Dryers",
     "description":
@@ -161,6 +177,7 @@
     "business_type": "Manufacturing"
   },
   {
+    "id": 17,
     "title": "Heavy Duty Exhaust Fan",
     "category": "Dryers",
     "description":
@@ -171,6 +188,7 @@
     "business_type": "Manufacturing"
   },
   {
+    "id": 18,
     "title": "Air Circulator Fan",
     "category": "Dryers",
     "description":
@@ -181,6 +199,7 @@
     "business_type": "Manufacturing"
   },
   {
+    "id": 19,
     "title": "Air Curtain Fan",
     "category": "Dryers",
     "description":
