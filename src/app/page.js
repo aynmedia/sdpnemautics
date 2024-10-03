@@ -1,12 +1,16 @@
 /** @format */
 
+import Articles from '@/components/articles/articles';
 import CategoryBento from '@/components/category/category';
+import ContactForm from '@/components/contact/contactform';
 import Hero from '@/components/hero/hero';
+import HomeProducts from '@/components/homeproducts/homeProducts';
+import ProductSlide from '@/components/productsslide/products';
 import About from '@/components/ui/about';
 import Company from '@/components/ui/companydetails';
 import AppleCardsCarousel from '@/components/ui/masonryfgrid';
+import Presence from '@/components/ui/presence';
 import Stats from '@/components/ui/stats';
-import Whyus from '@/components/ui/whyus';
 
 export default function Home() {
   return (
@@ -18,24 +22,26 @@ export default function Home() {
       <section className='w-full text-center gap-6'>
         <About />
       </section>
-      {/* Lorem Ipsum Section */}
       <section className='w-full text-center gap-6'>
-        <h1 className='text-5xl font-bold my-12 font-spaceGrotesk'>
-          WHAT ARE YOU LOOKING FOR?
-        </h1>
+        <Presence />
+      </section>
+      <section className='w-full text-center'>
         <CategoryBento />
+      </section>
+      <section className='w-full text-center'>
+        <HomeProducts />
       </section>
       <section className='w-full text-center gap-6'>
         <Stats />
       </section>
       <section className='w-full text-center gap-6'>
-        <Company />
+        <ProductSlide />
       </section>
       <section className='w-full text-center gap-6'>
-        <Whyus />
+        <ContactForm />
       </section>
-      <section className='w-full text-center gap-6 pt-64'>
-        <AppleCardsCarousel />
+      <section className='w-full text-center gap-6'>
+        <Articles />
       </section>
     </main>
   );

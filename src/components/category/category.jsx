@@ -1,98 +1,123 @@
 /** @format */
 
 import React from 'react';
-import { BentoGrid, BentoGridItem } from '../ui/bento-grid';
-import {
-  IconArrowWaveRightUp,
-  IconBoxAlignRightFilled,
-  IconBoxAlignTopLeft,
-  IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
-} from '@tabler/icons-react';
-import { color } from 'framer-motion';
+import { FaArrowCircleRight } from 'react-icons/fa';
+import network from '../../../public/images/network.svg';
+import diamond from '../../../public/images/diamond.svg';
+import price from '../../../public/images/price.svg';
+import Image from 'next/image';
+import Link from 'next/link';
+import Icon from '@/lib/icon';
 
 function CategoryBento() {
   return (
-    <BentoGrid className='max-w-6xl mx-auto'>
-      {items.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          title={item.title}
-          description={item.description}
-          header={item.header}
-          icon={item.icon}
-          color={item.color}
-          link={item.link}
-          className={i === 3 || i === 6 ? 'md:col-span-2' : ''}
-        />
-      ))}
-    </BentoGrid>
+    <div className='max-w-7xl mx-6 md:mx-auto mt-12'>
+      <div className='flex flex-col md:flex-row gap-6'>
+        <div className='w-full md:w-1/2'>
+          <p className='text-4xl font-bold text-slate-900'>
+            Why SD Pneumatics?
+          </p>
+        </div>
+        <div className='w-full md:w-1/2'>
+          <p className='text-lg text-left'>
+            SDPneumatics stands out for its commitment to quality, innovation,
+            and customer satisfaction. Our tailored solutions are designed to
+            improve performance, reduce downtime, and increase operational
+            longevity. Here’s why industries trust us
+          </p>
+          <button className='flex px-6 py-2 rounded-md border border-black bg-white text-black text-lg hover:shadow-[4px_4px_0px_0px_rgba(101,181,48)] transition duration-200 hover:text-green my-6 items-center'>
+            Learn More <FaArrowCircleRight size={24} className='pl-2' />
+          </button>
+        </div>
+      </div>
+      <div className='grid grid-cols-1 md:grid-cols-4 shadow-xl-reverse rounded-t-sm rounded-x-sm bg-white border-x border-t border-slate-300 mt-12 shadow-2xl text-slate-900'>
+        <div className='hover:bg-green group h-[400px] py-12 p-6 w-full flex flex-col justify-between'>
+          <Icon
+            icon='world'
+            className='group-hover:text-white text-green'
+            size={64}
+          />
+          <p className='text-left text-2xl font-medium group-hover:text-white'>
+            Network
+          </p>
+          <p className='text-left leading-6	opacity-70 text-md font-medium group-hover:text-white '>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          </p>
+          <Link
+            href={'/products/air-compressor'}
+            className='flex items-center text-left mt-4 font-bold group-hover:text-white '>
+            {' '}
+            Read More
+            <FaArrowCircleRight size={24} className='pl-2' />
+          </Link>
+        </div>
+        <div className='group hover:bg-green h-[400px] py-12 p-6 w-full flex flex-col justify-between border-l border-slate-300'>
+          <Icon
+            icon='diamond'
+            className='group-hover:text-white text-green'
+            size={64}
+          />
+          <p className='text-left text-2xl font-medium group-hover:text-white'>
+            Quality
+          </p>
+          <p className='text-left leading-6	opacity-70 text-md font-medium group-hover:text-white '>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          </p>
+          <Link
+            href={'/products/air-compressor'}
+            className='flex items-center text-left mt-4 font-bold group-hover:text-white '>
+            Read More
+            <FaArrowCircleRight size={24} className='pl-2' />
+          </Link>
+        </div>
+        <div className='group hover:bg-green h-[400px] py-12 p-6 w-full flex flex-col justify-between border-x border-slate-300'>
+          <Icon
+            icon='box'
+            className='group-hover:text-white text-green'
+            size={64}
+          />
+
+          <p className='text-left text-2xl font-medium group-hover:text-white '>
+            Warehouse
+          </p>
+          <p className='text-left leading-6	opacity-70 text-md font-medium group-hover:text-white '>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          </p>
+          <Link
+            href={'/products/air-compressor'}
+            className='flex items-center text-left mt-4 font-bold group-hover:text-white '>
+            {' '}
+            Read More
+            <FaArrowCircleRight size={24} className='pl-2' />
+          </Link>
+        </div>
+        <div className='group hover:bg-green h-[400px] py-12 p-6 w-full flex flex-col justify-between'>
+          <Icon
+            icon='trophy-one'
+            className='group-hover:text-white text-green'
+            size={64}
+          />
+          <p className='text-left text-2xl font-medium group-hover:text-white'>
+            Pricing
+          </p>
+          <p className='text-left leading-6	opacity-70 text-md font-medium group-hover:text-white'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          </p>
+          <Link
+            href={'/products/air-compressor'}
+            className='flex items-center text-left mt-4 font-bold group-hover:text-white'>
+            {' '}
+            Read More
+            <FaArrowCircleRight size={24} className='pl-2' />
+          </Link>
+        </div>
+      </div>
+    </div>
   );
 }
-const Skeleton = () => (
-  <div className='flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100'></div>
-);
-const items = [
-  {
-    title: 'Air Compressor',
-    description: 'Compress air to make it lighter and more efficient.',
-    header: <Skeleton />,
-    icon: <IconClipboardCopy className='h-4 w-4 text-neutral-500' />,
-    color: 'bg-blue-500',
-    link: '/products/air-compressor',
-  },
-
-  {
-    title: 'Vacuum Pumps',
-    description: 'Dive into the transformative power of technology.',
-    header: <Skeleton />,
-    icon: <IconFileBroken className='h-4 w-4 text-neutral-500' />,
-    color: 'bg-blue-500',
-    link: '/products/vacuum-pump',
-  },
-  {
-    title: 'Air Dryers',
-    description: 'Discover the beauty of thoughtful and functional design.',
-    header: <Skeleton />,
-    icon: <IconSignature className='h-4 w-4 text-neutral-500' />,
-    color: 'bg-blue-500',
-    link: '/products/air-dryer',
-  },
-  {
-    title: 'Air Chillers',
-    description:
-      'Understand the impact of effective communication in our lives.',
-    header: <Skeleton />,
-    icon: <IconTableColumn className='h-4 w-4 text-neutral-500' />,
-    color: 'bg-blue-500',
-    link: '/products/air-chiller',
-  },
-  {
-    title: 'Oil Cooling Systems',
-    description: 'Join the quest for understanding and enlightenment.',
-    header: <Skeleton />,
-    icon: <IconArrowWaveRightUp className='h-4 w-4 text-neutral-500' />,
-    color: 'bg-blue-500',
-    link: '/products/oil-cooling-system',
-  },
-  {
-    title: 'Air Conditioning Systems',
-    description: 'Experience the thrill of bringing ideas to life.',
-    header: <Skeleton />,
-    icon: <IconBoxAlignTopLeft className='h-4 w-4 text-neutral-500' />,
-    color: 'bg-blue-500',
-    link: '/products/air-conditioning-system',
-  },
-  {
-    title: 'Fans',
-    description: 'Embark on exciting journeys and thrilling discoveries.',
-    header: <Skeleton />,
-    icon: <IconBoxAlignRightFilled className='h-4 w-4 text-neutral-500' />,
-    color: 'bg-blue-500',
-    link: '/products/fan',
-  },
-];
 
 export default CategoryBento;

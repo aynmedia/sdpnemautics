@@ -1,7 +1,9 @@
 /** @format */
 /** @type {import('next').NextConfig} */
-
-module.exports = {
+const withMDX = require('@next/mdx')({
+  extension: /\.mdx?$/,
+});
+module.exports = withMDX({
   webpack: (config) => {
     config.resolve.fallback = { fs: false };
     return config;
@@ -11,4 +13,4 @@ module.exports = {
   images: {
     unoptimized: true,
   },
-};
+});

@@ -26,6 +26,8 @@ h1 {
   font-family: var(--font-spaceGrotesk);
   color: var(--foreground);
 }
+.swiper-button-next { color: #65B530; }
+.swiper-button-prev { color: #65B530; }
 Link:hover {
   color: #E55E04;
 }

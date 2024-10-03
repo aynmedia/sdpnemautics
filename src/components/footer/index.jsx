@@ -13,9 +13,9 @@ const Footer = () => {
   const year = date.getFullYear();
   return (
     <>
-      <div className='relative bg-[#1E1C2A]'>
-        <div className='absolute inset-0 bg-gradient-to-t from-[#1E1C2A] via-[#1E1C2A] to-transparent z-10'></div>
-        <div className='absolute inset-0 bg-[#1E1C2A]/70 z-10'></div>
+      <div className='relative bg-[#161616]'>
+        <div className='absolute inset-0 bg-gradient-to-t from-[#161616] via-[#161616] to-transparent z-10'></div>
+        <div className='absolute inset-0 bg-[#161616]/70 z-10'></div>
         <div className='absolute inset-0 z-10 flex flex-col items-center justify-center text-white'>
           <span className='font-spaceGrotesk font-bold text-3xl text-center'>
             Ready to Elevate Your Business?
@@ -35,12 +35,11 @@ const Footer = () => {
           className='object-cover'
           src={footer}
           alt='footer'
-          layout='responsive'
           width={1920}
           height={300}
         />
       </div>
-      <div className='bg-[#1E1C2A] flex flex-col md:flex-row z-100 px-4 md:px-24 text-white text-center md:text-left'>
+      <div className='bg-[#161616] flex flex-col md:flex-row z-100 px-4 md:px-24 text-white text-center md:text-left'>
         <div className='w-full md:w-1/4 pb-12'>
           <span className='flex font-spaceGrotesk font-bold text-xl text-center align-middle gap-4'>
             <Image src={logo} alt='logo' width={45} height={45} /> S D

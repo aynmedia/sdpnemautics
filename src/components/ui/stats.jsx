@@ -18,7 +18,7 @@ const Stats = () => {
           <div class='w-full lg:w-4/5'>
             <div class='flex flex-col flex-1 gap-10 lg:gap-0 lg:flex-row lg:justify-between'>
               <div class='block'>
-                <div class='font-manrope font-bold text-4xl text-indigo-600 mb-3 text-center lg:text-left'>
+                <div class='font-manrope font-bold text-4xl text-green mb-3 text-center lg:text-left'>
                   260+
                 </div>
                 <span class='text-gray-900 text-center block lg:text-left'>
@@ -26,7 +26,7 @@ const Stats = () => {
                 </span>
               </div>
               <div class='block'>
-                <div class='font-manrope font-bold text-4xl text-indigo-600 mb-3 text-center lg:text-left'>
+                <div class='font-manrope font-bold text-4xl text-green mb-3 text-center lg:text-left'>
                   975+
                 </div>
                 <span class='text-gray-900 text-center block lg:text-left'>
@@ -34,7 +34,7 @@ const Stats = () => {
                 </span>
               </div>
               <div class='block'>
-                <div class='font-manrope font-bold text-4xl text-indigo-600 mb-3 text-center lg:text-left'>
+                <div class='font-manrope font-bold text-4xl text-green mb-3 text-center lg:text-left'>
                   724+
                 </div>
                 <span class='text-gray-900 text-center block lg:text-left'>
@@ -42,7 +42,7 @@ const Stats = () => {
                 </span>
               </div>
               <div class='block'>
-                <div class='font-manrope font-bold text-4xl text-indigo-600 mb-3 text-center lg:text-left'>
+                <div class='font-manrope font-bold text-4xl text-green mb-3 text-center lg:text-left'>
                   89+
                 </div>
                 <span class='text-gray-900 text-center block lg:text-left'>

@@ -17,7 +17,7 @@
     "category": "Compressors",
     "description":
       "The Lubricated Screw Type Air Compressor is a high-performance compressor that delivers maximum efficiency and reliability. It is designed to meet the demands of a wide range of industrial applications, from small-scale manufacturing to large-scale industrial processes.",
-    "image": "assets/images/SDP_AC_Img_2.webp",
+    "image": "/images/products/lubricated-screw-type-air-compressor.jpeg",
     "location": "Worldwide",
     "features": ["Lubrication", "Air Compression", "High Efficiency"],
     "business_type": "Manufacturing"
@@ -160,24 +160,14 @@
     "category": "Dryers",
     "description":
       "The Refrigerated Oil Cooler is a high-performance dryer that delivers maximum efficiency and reliability. It is designed to meet the demands of a wide range of industrial applications, from small-scale manufacturing to large-scale industrial processes.",
-    "image": "assets/images/Refrigerated_Type_Air_Dryer.webp",
+    "image": "./images/Refrigerated_Type_Air_Dryer.webp",
     "location": "Worldwide",
     "features": ["Refrigerated", "Oil Cooler", "High Efficiency"],
     "business_type": "Manufacturing"
   },
+  
   {
     "id": 16,
-    "title": "Refrigerated Oil Cooler",
-    "category": "Dryers",
-    "description":
-      "The Refrigerated Oil Cooler is a high-performance dryer that delivers maximum efficiency and reliability. It is designed to meet the demands of a wide range of industrial applications, from small-scale manufacturing to large-scale industrial processes.",
-    "image": "assets/images/Refrigerated_Type_Air_Dryer.webp",
-    "location": "Worldwide",
-    "features": ["Refrigerated", "Oil Cooler", "High Efficiency"],
-    "business_type": "Manufacturing"
-  },
-  {
-    "id": 17,
     "title": "Heavy Duty Exhaust Fan",
     "category": "Dryers",
     "description":
@@ -188,7 +178,7 @@
     "business_type": "Manufacturing"
   },
   {
-    "id": 18,
+    "id": 17,
     "title": "Air Circulator Fan",
     "category": "Dryers",
     "description":
@@ -199,7 +189,7 @@
     "business_type": "Manufacturing"
   },
   {
-    "id": 19,
+    "id": 18,
     "title": "Air Curtain Fan",
     "category": "Dryers",
     "description":
