@@ -87,18 +87,16 @@ const Presence = () => {
         </Swiper>
         <div className='flex justify-between my-12'>
           <div className='w-16 flex justify-between gap-6  px-4'>
-            <Reavel>
-              <button
-                className='bg-white p-3 rounded-full shadow-md hover:bg-green hover:text-white text-black'
-                onClick={() => swiperRef.current?.slidePrev()}>
-                <FaArrowLeft className='mx-2' />
-              </button>
-              <button
-                className='bg-white p-3 rounded-full shadow-md hover:bg-green hover:text-white text-black'
-                onClick={() => swiperRef.current?.slideNext()}>
-                <FaArrowRight className='mx-2' />
-              </button>
-            </Reavel>
+            <button
+              className='bg-white p-3 rounded-full shadow-md hover:bg-green hover:text-white text-black'
+              onClick={() => swiperRef.current?.slidePrev()}>
+              <FaArrowLeft className='mx-2' />
+            </button>
+            <button
+              className='bg-white p-3 rounded-full shadow-md hover:bg-green hover:text-white text-black'
+              onClick={() => swiperRef.current?.slideNext()}>
+              <FaArrowRight className='mx-2' />
+            </button>
           </div>
           <Reavel>
             <div className='flex gap-6 px-4 items-center'>
