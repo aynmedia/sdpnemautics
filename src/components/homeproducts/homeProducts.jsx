@@ -4,8 +4,12 @@ import React from 'react';
 import { BsFillExclamationOctagonFill } from 'react-icons/bs';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import airCompressor from '../../../public/images/products/lubricated-screw-type-air-compressor.jpeg';
+import oilcompressor from '../../../public/images/products/oil-free-reciprocating-air-compressor.jpeg';
+import refrigerantairdyer from '../../../public/images/products/refrigerant-type-air-dryer.jpeg';
 import Image from 'next/image';
 import { FaArrowCircleRight } from 'react-icons/fa';
+import Link from 'next/link';
+
 const HomeProducts = () => {
   return (
     <div className='w-full bg-[#161616] min-h-screen -mt-8'>
@@ -94,8 +98,8 @@ const HomeProducts = () => {
               1
             </div>
             <Image
-              src={airCompressor}
-              alt='Air Compressor'
+              src={oilcompressor}
+              alt='oil air compressor'
               width={600}
               height={500}
               objectFit='cover'
@@ -104,36 +108,33 @@ const HomeProducts = () => {
           </div>
           <div className='w-full md:w-1/2'>
             <p className='text-left text-2xl md:text-4xl font-bold text-white mb-12'>
-              Lubricated Screw Type Air Compressor
+              Oil-Free Reciprocating Air Compressor
             </p>
             <p className='text-left text-lg text-white'>
-              The Lubricated Screw Type Air Compressor is engineered for
-              high-performance and continuous operation, offering reliable
-              compressed air solutions for industrial applications. Designed
-              with advanced rotary screw technology, this compressor ensures
-              smooth and efficient air compression by utilizing a pair of
-              interlocking helical rotors. The lubrication system injects oil
-              into the compression chamber, not only to lubricate the moving
-              parts but also to create a perfect seal and dissipate the heat
-              generated during the compression process.
+              Our Oil-Free Reciprocating Air Compressors are designed to deliver
+              clean, high-quality air, making them an ideal choice for
+              applications where oil contamination cannot be tolerated. These
+              compressors operate without the need for lubricating oil, ensuring
+              that the air output remains free of impurities, providing enhanced
+              safety and performance across industries like food and beverage,
+              pharmaceuticals, and electronics manufacturing.
             </p>
             <ul className='text-left text-lg text-white list-none mt-6'>
               <li>
                 <span class='text-green mr-2'>✔</span>
-                High Efficiency
+                100% Oil-Free Air Output
               </li>
               <li>
-                <span class='text-green mr-2'>✔</span>Continuous Operation
+                <span class='text-green mr-2'>✔</span> Low Maintenance
               </li>
               <li>
-                <span class='text-green mr-2'>✔</span>Superior Cooling and
-                Lubrication
+                <span class='text-green mr-2'>✔</span>High Efficiency
               </li>
               <li>
-                <span class='text-green mr-2'>✔</span>Low Noise and Vibration
+                <span class='text-green mr-2'>✔</span>Durable Build:
               </li>
               <li>
-                <span class='text-green mr-2'>✔</span>Durable and Reliable
+                <span class='text-green mr-2'>✔</span>Environmentally Friendly
               </li>
               <li>
                 <span class='text-green mr-2'>✔</span>Easy Maintenance
@@ -150,33 +151,30 @@ const HomeProducts = () => {
         <div className='flex flex-col md:flex-row my-12 gap-6 mx-6 '>
           <div className='w-full md:w-1/2'>
             <p className='text-left text-2xl md:text-4xl font-bold text-white mb-12'>
-              Lubricated Screw Type Air Compressor
+              Refrigerant Type Air Dryer
             </p>
             <p className='text-left text-lg text-white'>
-              The Lubricated Screw Type Air Compressor is engineered for
-              high-performance and continuous operation, offering reliable
-              compressed air solutions for industrial applications. Designed
-              with advanced rotary screw technology, this compressor ensures
-              smooth and efficient air compression by utilizing a pair of
-              interlocking helical rotors. The lubrication system injects oil
-              into the compression chamber, not only to lubricate the moving
-              parts but also to create a perfect seal and dissipate the heat
-              generated during the compression process.
+              The Refrigerant Type Air Dryer is a highly efficient solution
+              designed to remove moisture and condensate from compressed air
+              systems. By using a refrigeration process, this air dryer cools
+              the air to remove water vapor, ensuring dry, clean air for a
+              variety of industrial applications. This helps protect your
+              equipment from corrosion, prolongs its lifespan, and ensures
+              better overall performance.
             </p>
             <ul className='text-left text-lg text-white list-none mt-6'>
               <li>
                 <span class='text-green mr-2'>✔</span>
-                High Efficiency
+                Efficient Moisture Removal
               </li>
               <li>
-                <span class='text-green mr-2'>✔</span>Continuous Operation
+                <span class='text-green mr-2'>✔</span>Energy Efficient
               </li>
               <li>
-                <span class='text-green mr-2'>✔</span>Superior Cooling and
-                Lubrication
+                <span class='text-green mr-2'>✔</span>User-Friendly Design
               </li>
               <li>
-                <span class='text-green mr-2'>✔</span>Low Noise and Vibration
+                <span class='text-green mr-2'>✔</span>Reliable Performance
               </li>
               <li>
                 <span class='text-green mr-2'>✔</span>Durable and Reliable
@@ -186,10 +184,12 @@ const HomeProducts = () => {
               </li>
             </ul>
             <div className='flex gap-4 my-6'>
-              <button className='px-6 py-4 rounded-md border border-black bg-white text-black text-md hover:shadow-[4px_4px_0px_0px_rgba(101,181,48)] transition duration-200 hover:text-green flex items-center font-bold'>
-                Explore Our Products{' '}
-                <FaArrowCircleRight size={32} className='pl-2' />
-              </button>
+              <Link href={'/products/'}>
+                <button className='px-6 py-4 rounded-md border border-black bg-white text-black text-md hover:shadow-[4px_4px_0px_0px_rgba(101,181,48)] transition duration-200 hover:text-green flex items-center font-bold'>
+                  Explore Our Products{' '}
+                  <FaArrowCircleRight size={32} className='pl-2' />
+                </button>
+              </Link>
             </div>
           </div>
           <div className='relative flex justify-center items-center'>
@@ -197,8 +197,8 @@ const HomeProducts = () => {
               1
             </div>
             <Image
-              src={airCompressor}
-              alt='Air Compressor'
+              src={refrigerantairdyer}
+              alt='refrigerant air dyer'
               width={600}
               height={500}
               objectFit='cover'

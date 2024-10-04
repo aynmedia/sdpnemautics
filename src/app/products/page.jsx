@@ -6,8 +6,8 @@ import Product from '@/components/ui/product';
 import products from '@/lib/products.json';
 
 export const metadata = {
-  title: 'Products',
-  description: 'Products',
+  title: 'Our Wide Range of Products',
+  description: 'Our Wide Range of Products',
 };
 
 const Page = () => {

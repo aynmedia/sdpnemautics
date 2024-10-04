@@ -6,11 +6,14 @@ import React from 'react';
 import motor from '../../../public/images/motor.jpg';
 import { FaCheck } from 'react-icons/fa';
 import Stats from '@/components/ui/stats';
+import Presence from '@/components/ui/presence';
+import Team from '@/components/team';
+import ProductSlide from '@/components/productsslide/products';
 
 function Page() {
   return (
     <>
-      <PageHeader title='About' />
+      <PageHeader title='About Us' />
       <div className='max-w-6xl my-24 mx-4 md:mx-auto'>
         <div className='flex flex-col gap-10 md:flex-row'>
           <div className='w-full md:w-1/2'>
@@ -64,6 +67,15 @@ function Page() {
           <Stats />
         </section>
       </div>
+      <section className=' gap-6'>
+        <Presence />
+      </section>
+      <section>
+        <Team />
+      </section>
+      <section>
+        <ProductSlide />
+      </section>
     </>
   );
 }
