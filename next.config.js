@@ -8,8 +8,8 @@ module.exports = withMDX({
     config.resolve.fallback = { fs: false };
     return config;
   },
-  // assetPrefix: '.',
-  // // output: 'export',
+  assetPrefix: '.',
+  output: 'export',
   images: {
     unoptimized: true,
   },

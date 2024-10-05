@@ -7,7 +7,7 @@ const Team = () => {
   return (
     <div>
       <div className='grid grid-cols-1 align-center md:grid-cols-3 my-24 max-w-7xl mx-6 md:mx-auto gap-6'>
-        <div className='group relative border border-r-none border-gray-300  text-[#1E1C2A] w-full h-full cursor-pointer cursor-pointer'>
+        <div className='group relative border border-r-none border-gray-300  text-[#1E1C2A] w-full h-full cursor-pointer '>
           <Image
             className='absolute inset-0 w-full h-full object-cover transition-opacity duration-200 opacity-0 group-hover:opacity-100 group-hover:scale-105 ease-in-out transform rounded-lg'
             src={team}

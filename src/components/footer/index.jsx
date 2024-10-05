@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { Button } from '../ui/button';
 import { IoIosSend } from 'react-icons/io';
 import logo from '../../../public/images/logo.png';
+import ProductList from './topPoducts';
 const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
@@ -17,7 +18,7 @@ const Footer = () => {
         <div className='absolute inset-0 bg-gradient-to-t from-[#161616] via-[#161616] to-transparent z-10'></div>
         <div className='absolute inset-0 bg-[#161616]/70 z-10'></div>
         <div className='absolute inset-0 z-10 flex flex-col items-center justify-center text-white'>
-          <span className='font-spaceGrotesk font-bold text-3xl text-center'>
+          <span className='font-spaceGrotesk font-bold text-3xl text-center text-green'>
             Ready to Elevate Your Business?
           </span>
           <p className='hidden md:flex text-xl max-w-5xl text-center py-4'>
@@ -41,7 +42,7 @@ const Footer = () => {
       </div>
       <div className='bg-[#161616] flex flex-col md:flex-row z-100 px-4 md:px-24 text-white text-center md:text-left'>
         <div className='w-full md:w-1/4 pb-12'>
-          <span className='flex font-spaceGrotesk font-bold text-xl text-center align-middle gap-4'>
+          <span className='flex font-spaceGrotesk font-bold text-xl text-center align-middle gap-4 text-green'>
             <Image src={logo} alt='logo' width={45} height={45} /> S D
             Pneumatics
           </span>
@@ -56,35 +57,36 @@ const Footer = () => {
           <span className='font-spaceGrotesk my-12'>© {year} SDPnematics</span>
         </div>
         <div className='w-full md:w-1/4 text-center'>
-          <span className='font-spaceGrotesk font-bold text-xl text-center'>
+          <span className='font-spaceGrotesk text-green font-bold text-xl text-center'>
             About
           </span>
           <ul>
             {menuItems.map((item) => (
               <li
                 key={item.name}
-                className='my-6 font-bold hover:underline hover:text-blue-600'>
+                className='my-6 font-bold hover:underline hover:text-green'>
                 <Link href={item.href}>{item.name}</Link>
               </li>
             ))}
           </ul>
         </div>
-        <div className='w-full md:w-1/4 text-center'>
-          <span className='font-spaceGrotesk font-bold text-xl text-center'>
-            Categories
+        <div className='w-full md:w-1/4'>
+          <span className='font-spaceGrotesk font-bold text-xl text-left text-green'>
+            Our Range of Products
           </span>
-          <ul>
-            {menuItems.map((item) => (
+          <ProductList />
+          {/* <ul>
+            {products.map((item) => (
               <li
                 key={item.name}
                 className='my-6 font-bold hover:underline hover:text-blue-600'>
                 <Link href={item.href}>{item.name}</Link>
               </li>
             ))}
-          </ul>
+          </ul> */}
         </div>
-        <div className='w-full md:w-1/4 text-center'>
-          <span className='font-spaceGrotesk font-bold text-xl text-center'>
+        <div className='w-full md:w-1/4'>
+          <span className='font-spaceGrotesk font-bold text-xl text-left text-green'>
             Address
           </span>
           <p className='pb-2 pt-12 text-left'>S.D. PNEUMATICS</p>

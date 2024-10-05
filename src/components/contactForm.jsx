@@ -14,29 +14,19 @@ import {
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
 import { Textarea } from '@/components/ui/textarea';
-import Products from '@/lib/products.json';
 
 const formSchema = z.object({
-  interest: z.string().min(2, 'Interest must be at least 2 characters long'),
   name: z.string().min(2, 'Name must be at least 2 characters long'),
   email: z.string().email('Invalid email address'),
   phone: z.string().min(10, 'Phone number must be at least 10 characters long'),
   message: z.string().min(2, 'Message must be at least 2 characters long'),
 });
 
-const EnquiryForm = () => {
+const ContactForm = () => {
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      interest: '',
       name: '',
       email: '',
       phone: '',
@@ -66,43 +56,12 @@ const EnquiryForm = () => {
     }
   };
 
-  console.log(form.formState.errors);
-
   return (
     <div className='text-left'>
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
           className='flex flex-col gap-4'>
-          <FormField
-            control={form.control}
-            name='interest'
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Select your interest</FormLabel>
-                <FormControl>
-                  <Select
-                    onValueChange={field.onChange}
-                    value={field.value}
-                    defaultValue={field.value}>
-                    <SelectTrigger className='w-full'>
-                      <SelectValue placeholder='You are interested in...' />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {Products.map((item, index) => (
-                        <SelectItem
-                          key={`${item.title}-${index}`}
-                          value={item.title}>
-                          {item.title}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
           <FormField
             control={form.control}
             name='name'
@@ -173,4 +132,4 @@ const EnquiryForm = () => {
   );
 };
 
-export default EnquiryForm;
+export default ContactForm;

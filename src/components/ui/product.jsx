@@ -12,8 +12,8 @@ import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { FaArrowCircleRight } from 'react-icons/fa';
 import { FaDownload } from 'react-icons/fa6';
+import Enquireproduct from './enquireproduct';
 
 const Product = ({ products }) => {
   const [visibleProducts, setVisibleProducts] = useState(6);
@@ -39,10 +39,10 @@ const Product = ({ products }) => {
             </CardContent>
             <CardFooter>
               <div className='flex gap-2 flex-wrap'>
-                <Button variant='ghost' size='lg'>
-                  Get A Quote
-                  <FaArrowCircleRight size={24} className='pl-2' />
-                </Button>
+                <Enquireproduct
+                  triggerText='Get A Quote'
+                  productName={product.title}
+                />
                 <Button variant='ghost' size='lg'>
                   Brochure <FaDownload size={24} className='pl-2' />
                 </Button>

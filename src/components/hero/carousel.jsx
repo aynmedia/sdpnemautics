@@ -65,8 +65,7 @@ const Carousel = ({ slides, interval = 10000 }) => {
           src={slides[currentIndex].image}
           alt={`Slide ${currentIndex + 1}`}
           layout='fill'
-          objectFit='cover'
-          className='rounded-lg shadow-lg'
+          className='rounded-lg shadow-lg object-cover'
         />
         <div className='absolute top-0 left-0 w-full h-full bg-green-800 opacity-80'></div>
         {/* Slide Description */}

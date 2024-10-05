@@ -1,14 +1,11 @@
 /** @format */
 
-import Articles from '@/components/articles/articles';
 import CategoryBento from '@/components/category/category';
 import ContactForm from '@/components/contact/contactform';
 import Hero from '@/components/hero/hero';
 import HomeProducts from '@/components/homeproducts/homeProducts';
 import ProductSlide from '@/components/productsslide/products';
 import About from '@/components/ui/about';
-import Company from '@/components/ui/companydetails';
-import AppleCardsCarousel from '@/components/ui/masonryfgrid';
 import Presence from '@/components/ui/presence';
 import Stats from '@/components/ui/stats';
 
@@ -37,11 +34,8 @@ export default function Home() {
       <section className='w-full text-center gap-6'>
         <ProductSlide />
       </section>
-      <section className='w-full text-center gap-6'>
+      <section id='enquire' className='w-full text-center gap-6'>
         <ContactForm />
-      </section>
-      <section className='w-full text-center gap-6'>
-        <Articles />
       </section>
     </main>
   );

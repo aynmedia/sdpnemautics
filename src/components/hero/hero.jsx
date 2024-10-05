@@ -2,12 +2,23 @@
 'use client';
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 import slide1 from '../../../public/images/slide1.jpg';
 import slide2 from '../../../public/images/slide2.jpg';
 import Image from 'next/image';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import { FaArrowCircleRight } from 'react-icons/fa';
 
+import { FaArrowCircleRight } from 'react-icons/fa';
+import lubecratedscrew from '../../../public/images/products/lubricated-screw-type-air-compressor.jpeg';
 import 'swiper/css';
 import Link from 'next/link';
 
@@ -22,28 +33,32 @@ const Hero = () => {
     },
     {
       image: slide2,
-      title: 'Medical Breathing Systems',
-      description: 'This is the description for Slide 2.',
+      title: 'Innovating Pneumatic Solutions for a Better Tomorrow',
+      description:
+        'TAt SD Pneumatics, we deliver high-performance pneumatic systems that drive industrial efficiency and innovation. With a focus on reliability, sustainability, and cutting-edge technology, we ensure your business operates at peak performance.',
     },
-    {
-      image: 'https://via.placeholder.com/1920x1080?text=Slide+3',
-      title: 'Slide 3',
-      description: 'This is the description for Slide 3.',
-    },
+    // {
+    //   image: 'https://via.placeholder.com/1920x1080?text=Slide+3',
+    //   title: 'Slide 3',
+    //   description: 'This is the description for Slide 3.',
+    // },
   ];
 
   return (
     <div className='relative flex items-center font-spaceGrotesk'>
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         slidesPerView={1}
         spaceBetween={0}
         centeredSlides={true}
         loop={true}
         autoplay={{
-          delay: 1000,
+          delay: 7000,
           disableOnInteraction: false,
         }}
+        freeMode
+        freeModeMomentum
+        grabCursor
         navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}>
@@ -86,7 +101,7 @@ const Hero = () => {
                       Lubricated Screw Type Air Compressor
                     </p>
                     <Image
-                      src={slide.image}
+                      src={lubecratedscrew}
                       alt={slide.title}
                       className='w-full h-full object-cover rounded-sm'
                       width={400}
@@ -99,11 +114,12 @@ const Hero = () => {
                       Air Compressors
                     </p>
                     <Link
-                      href='/'
-                      className='text-green font-bold flex items-center justify-center gap-2'>
-                      Get A Quote
+                      href='#enquire'
+                      className='flex justify-center items-center font-bold hover:text-green'>
+                      Get a Quote
                       <FaArrowCircleRight size={32} className='pl-2' />
                     </Link>
+                    {/* <ProductDialog triggerText='Get A Quote' /> */}
                   </div>
                 </div>
               </div>

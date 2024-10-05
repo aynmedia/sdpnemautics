@@ -3,7 +3,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { MdDehaze, MdClose } from 'react-icons/md';
+import { MdDehaze } from 'react-icons/md';
 import Image from 'next/image';
 import { menuItems } from '@/lib/stats'; // Modify with your actual menu structure
 
@@ -16,6 +16,8 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/components/ui/sheet';
+import { Button } from './ui/button';
+import { FaDownload } from 'react-icons/fa6';
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,7 +42,7 @@ function Navbar() {
     <div
       className={`px-12 fixed top-0 left-0 w-full z-50 bg-transparent py-5 transition-all duration-300 ${
         isScrolled
-          ? 'py-2 bg-white text-[#1E1C2A] hover:text-green transform'
+          ? 'py-2 bg-white text-[#1E1C2A] '
           : 'py-5 bg-transparent border-b border-gray-300/20 shadow-md'
       }`}>
       <nav className='border-gray-200'>
@@ -65,7 +67,7 @@ function Navbar() {
           </Link>
 
           {/* Desktop Menu Items (Shown on md screens and above) */}
-          <ul className='hidden md:flex space-x-8'>
+          <ul className='hidden md:flex space-x-8 items-center'>
             {menuItems.map((item) => (
               <li key={item.name}>
                 <Link
@@ -75,6 +77,18 @@ function Navbar() {
                 </Link>
               </li>
             ))}
+            {/* Download Brochure Button */}
+            <li>
+              <Link href='/path-to-brochure.pdf' download className=''>
+                <Button
+                  variant=''
+                  size='lg'
+                  className='bg-green-600 text-green font-bold py-2 px-4 rounded-md hover:bg-green-500 transition duration-150 ease-in-out'>
+                  <FaDownload className='mr-2' />
+                  Download Brochure
+                </Button>
+              </Link>
+            </li>
           </ul>
 
           {/* Mobile Menu Button (Shown only on small screens) */}
@@ -89,11 +103,7 @@ function Navbar() {
             <SheetContent side='left' className='p-4 bg-white w-full h-screen'>
               <SheetHeader>
                 <SheetTitle>SD Pneumatics</SheetTitle>
-                <SheetClose asChild>
-                  {/* <button className='text-right mb-4'>
-                    <MdClose className='w-6 h-6' />
-                  </button> */}
-                </SheetClose>
+                <SheetClose asChild />
               </SheetHeader>
 
               <ul className='flex flex-col space-y-4 justify-center items-center h-full'>
@@ -108,6 +118,18 @@ function Navbar() {
                     </SheetClose>
                   </li>
                 ))}
+                {/* Download Brochure Button in Mobile Menu */}
+                <div className='mt-6 text-center'>
+                  <Link href='/path-to-brochure.pdf' download className=''>
+                    <Button
+                      variant='outline'
+                      size='lg'
+                      className='bg-green-600 text-[#1E1C2A] font-bold py-2 px-4 rounded-md hover:bg-green-500 transition duration-150 ease-in-out'>
+                      <FaDownload className='mr-2' />
+                      Download Brochure
+                    </Button>
+                  </Link>
+                </div>
               </ul>
             </SheetContent>
           </Sheet>
