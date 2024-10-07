@@ -11,7 +11,7 @@ const page = () => {
       <PageHeader
         title='Contact Us'
         currentPage='Contact Us'
-        imageSrc='/images/contact.jpg'
+        imageSrc='/images/ContactUS_Img.webp'
       />
       <div className='relative w-full  p-4 md:p-16 '>
         {/* <Image
