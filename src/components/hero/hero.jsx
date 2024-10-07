@@ -15,6 +15,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import slide1 from '../../../public/images/slide1.jpg';
 import slide2 from '../../../public/images/slide2.jpg';
+import slide3 from '../../../public/images/slide3.jpg';
 import Image from 'next/image';
 
 import { FaArrowCircleRight } from 'react-icons/fa';
@@ -37,11 +38,12 @@ const Hero = () => {
       description:
         'TAt SD Pneumatics, we deliver high-performance pneumatic systems that drive industrial efficiency and innovation. With a focus on reliability, sustainability, and cutting-edge technology, we ensure your business operates at peak performance.',
     },
-    // {
-    //   image: 'https://via.placeholder.com/1920x1080?text=Slide+3',
-    //   title: 'Slide 3',
-    //   description: 'This is the description for Slide 3.',
-    // },
+    {
+      image: slide3,
+      title: 'Empowering Industries with Precision Pneumatics',
+      description:
+        'Explore our innovative solutions tailored for your business needs.',
+    },
   ];
 
   return (

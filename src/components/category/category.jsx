@@ -45,9 +45,9 @@ function CategoryBento() {
               Network
             </p>
             <p className='text-left leading-6	opacity-70 text-md font-medium group-hover:text-white '>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim
+              Our extensive distribution network ensures timely delivery of
+              products to clients across the region, providing reliable and
+              consistent support for all pneumatic solutions.
             </p>
             <Link
               href={'/products/air-compressor'}
@@ -69,9 +69,9 @@ function CategoryBento() {
               Quality
             </p>
             <p className='text-left leading-6	opacity-70 text-md font-medium group-hover:text-white '>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim
+              Committed to excellence, we follow strict quality control
+              processes at every stage, delivering products that meet the
+              highest industry standards and exceed customer expectations.
             </p>
             <Link
               href={'/products/air-compressor'}
@@ -93,9 +93,9 @@ function CategoryBento() {
               Warehouse
             </p>
             <p className='text-left leading-6	opacity-70 text-md font-medium group-hover:text-white '>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim
+              We maintain a state-of-the-art warehouse facility, designed to
+              store our wide range of products safely and efficiently, ensuring
+              quick order fulfillment and on-time dispatch.
             </p>
             <Link
               href={'/products/air-compressor'}
@@ -117,9 +117,9 @@ function CategoryBento() {
               Pricing
             </p>
             <p className='text-left leading-6	opacity-70 text-md font-medium group-hover:text-white'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim
+              We offer competitive pricing without compromising on quality,
+              providing cost-effective solutions that cater to the diverse needs
+              of our clients.
             </p>
             <Link
               href={'/products/air-compressor'}
