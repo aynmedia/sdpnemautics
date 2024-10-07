@@ -36,7 +36,7 @@ const Hero = () => {
       image: slide2,
       title: 'Innovating Pneumatic Solutions for a Better Tomorrow',
       description:
-        'TAt SD Pneumatics, we deliver high-performance pneumatic systems that drive industrial efficiency and innovation. With a focus on reliability, sustainability, and cutting-edge technology, we ensure your business operates at peak performance.',
+        'We deliver high-performance pneumatic systems that drive industrial efficiency and innovation. With a focus on reliability, sustainability, and cutting-edge technology, we ensure your business operates at peak performance.',
     },
     {
       image: slide3,
