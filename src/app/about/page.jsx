@@ -13,7 +13,7 @@ import ProductSlide from '@/components/productsslide/products';
 function Page() {
   return (
     <>
-      <PageHeader title='About Us' imageSrc='/images/office.jpg' />
+      <PageHeader title='About Us' imageSrc='/images/About_US_Img.webp' />
       <div className='max-w-6xl my-24 mx-4 md:mx-auto'>
         <div className='flex flex-col gap-10 md:flex-row'>
           <div className='w-full md:w-1/2'>

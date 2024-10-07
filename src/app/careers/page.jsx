@@ -7,7 +7,7 @@ import React from 'react';
 const page = () => {
   return (
     <>
-      <PageHeader title='Careers' imageSrc='/images/office.jpg' />
+      <PageHeader title='Careers' imageSrc='/images/Careers_Img.webp' />
       <div className='max-w-6xl my-24 mx-4 md:mx-auto'>
         <h1 className='text-4xl font-bold text-left font-spaceGrotesk mb-2'>
           Join Our Team
