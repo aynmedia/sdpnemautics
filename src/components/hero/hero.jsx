@@ -86,13 +86,18 @@ const Hero = () => {
                   </h2>
                   <p className='text-md md:text-lg'>{slide.description}</p>
                   <div className='flex gap-4'>
-                    <button className='px-6 py-4 rounded-md border border-black bg-white text-black text-md hover:shadow-[4px_4px_0px_0px_rgba(101,181,48)] transition duration-200 hover:text-green flex items-center font-bold'>
-                      Explore Our Products{' '}
-                      <FaArrowCircleRight size={32} className='pl-2' />
-                    </button>
-                    <button className='px-6 py-4 rounded-md border border-black bg-white text-black text-md hover:shadow-[4px_4px_0px_0px_rgba(101,181,48)] transition duration-200 hover:text-green font-bold'>
-                      More About Us
-                    </button>
+                    {' '}
+                    <Link href='/products'>
+                      <button className='px-6 py-4 rounded-md border border-black bg-white text-black text-md hover:shadow-[4px_4px_0px_0px_rgba(101,181,48)] transition duration-200 hover:text-green flex items-center font-bold'>
+                        Explore Our Products{' '}
+                        <FaArrowCircleRight size={32} className='pl-2' />
+                      </button>
+                    </Link>
+                    <Link href='/about'>
+                      <button className='px-6 py-5 rounded-md border border-black bg-white text-black text-md hover:shadow-[4px_4px_0px_0px_rgba(101,181,48)] transition duration-200 hover:text-green font-bold'>
+                        More About Us
+                      </button>
+                    </Link>
                   </div>
                 </div>
 

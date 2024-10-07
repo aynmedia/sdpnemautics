@@ -1,15 +1,15 @@
 /** @format */
 
 import React from 'react';
-import { BsFillExclamationOctagonFill } from 'react-icons/bs';
+import { FaExclamationCircle } from 'react-icons/fa';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import airCompressor from '../../../public/images/products/lubricated-screw-type-air-compressor.jpeg';
 import oilcompressor from '../../../public/images/products/oil-free-reciprocating-air-compressor.jpeg';
 import refrigerantairdyer from '../../../public/images/products/refrigerant-type-air-dryer.jpeg';
 import Image from 'next/image';
 import { FaArrowCircleRight } from 'react-icons/fa';
-import Link from 'next/link';
 import Reavel from '@/lib/reveal';
+import Link from 'next/link';
 
 const HomeProducts = () => {
   return (
@@ -18,19 +18,20 @@ const HomeProducts = () => {
         <div className='flex items-center'>
           <Reavel>
             <p className='flex gap-6 items-center md:text-md md:text-xl text-left max-w-2xl'>
-              <BsFillExclamationOctagonFill
-                className='text-red-600 animate-pulse 	'
-                size={48}
-              />
+              <FaExclamationCircle className='' size={48} />
               From air compressors to advanced cooling systems, explore our full
               range of innovative solutions.
             </p>
           </Reavel>
         </div>
         <Reavel>
-          <button className='px-6 py-4 rounded-md border border-black bg-green hover:bg-white text-white text-lg hover:shadow-[4px_4px_0px_0px_rgba(101,181,48)] transition duration-200 hover:text-green flex justify-center'>
-            Explore Our Products <FaArrowRightLong size={32} className='pl-2' />
-          </button>
+          {' '}
+          <Link href='/products'>
+            <button className='px-6 py-4 rounded-md border border-black bg-green hover:bg-white text-white text-lg hover:shadow-[4px_4px_0px_0px_rgba(101,181,48)] transition duration-200 hover:text-green flex justify-center'>
+              Explore Our Products{' '}
+              <FaArrowRightLong size={32} className='pl-2' />
+            </button>
+          </Link>
         </Reavel>
       </div>
 
@@ -86,10 +87,13 @@ const HomeProducts = () => {
             <div className='flex gap-4 my-6'>
               {' '}
               <Reavel>
-                <button className='px-6 py-4 rounded-md border border-black bg-white text-black text-md hover:shadow-[4px_4px_0px_0px_rgba(101,181,48)] transition duration-200 hover:text-green flex items-center font-bold'>
-                  Explore Our Products{' '}
-                  <FaArrowCircleRight size={32} className='pl-2' />
-                </button>{' '}
+                {' '}
+                <Link href='/products'>
+                  <button className='px-6 py-4 rounded-md border border-black bg-white text-black text-md hover:shadow-[4px_4px_0px_0px_rgba(101,181,48)] transition duration-200 hover:text-green flex items-center font-bold'>
+                    Explore Our Products{' '}
+                    <FaArrowCircleRight size={32} className='pl-2' />
+                  </button>
+                </Link>
               </Reavel>
             </div>
           </div>
@@ -159,10 +163,12 @@ const HomeProducts = () => {
 
             <div className='flex gap-4 my-6'>
               <Reavel>
-                <button className='px-6 py-4 rounded-md border border-black bg-white text-black text-md hover:shadow-[4px_4px_0px_0px_rgba(101,181,48)] transition duration-200 hover:text-green flex items-center font-bold'>
-                  Explore Our Products{' '}
-                  <FaArrowCircleRight size={32} className='pl-2' />
-                </button>{' '}
+                <Link href='/products'>
+                  <button className='px-6 py-4 rounded-md border border-black bg-white text-black text-md hover:shadow-[4px_4px_0px_0px_rgba(101,181,48)] transition duration-200 hover:text-green flex items-center font-bold'>
+                    Explore Our Products
+                    <FaArrowCircleRight size={32} className='pl-2' />
+                  </button>
+                </Link>
               </Reavel>
             </div>
           </div>
@@ -210,14 +216,14 @@ const HomeProducts = () => {
             </Reavel>
 
             <div className='flex gap-4 my-6'>
-              <Link href={'/products/'}>
-                <Reavel>
+              <Reavel>
+                <Link href='/products'>
                   <button className='px-6 py-4 rounded-md border border-black bg-white text-black text-md hover:shadow-[4px_4px_0px_0px_rgba(101,181,48)] transition duration-200 hover:text-green flex items-center font-bold'>
                     Explore Our Products{' '}
                     <FaArrowCircleRight size={32} className='pl-2' />
-                  </button>{' '}
-                </Reavel>
-              </Link>
+                  </button>
+                </Link>
+              </Reavel>
             </div>
           </div>
           <div className='relative flex justify-center items-center'>

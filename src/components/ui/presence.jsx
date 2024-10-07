@@ -20,11 +20,12 @@ import { IoMdDownload } from 'react-icons/io';
 
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import Reavel from '@/lib/reveal';
+import DownloadButton from './downloadbrochure';
 const Presence = () => {
   const swiperRef = useRef(null);
 
   return (
-    <div className='relative flex flex-row md:flex-col items-center justify-center gap-6 bg-white'>
+    <div className='relative flex flex-row md:flex-col items-center justify-center gap-6 bg-white py-6'>
       <Image
         className='w-screen min-h-screen object-cover'
         src={worker}
@@ -38,7 +39,7 @@ const Presence = () => {
       <div className='absolute max-w-7xl w-full md:mx-auto mx-6 text-white'>
         <div className='max-w-7xl mx-6 md:mx-auto top-0 left-0 w-full h-full'>
           <Reavel>
-            <h1 className='md:text-5xl text-3xl; font-bold text-left font-spaceGrotesk text-white'>
+            <h1 className='md:text-5xl text-3xl font-bold text-left font-spaceGrotesk text-white '>
               Industry Wide Presence
             </h1>
           </Reavel>
@@ -116,10 +117,11 @@ const Presence = () => {
           </div>
           <Reavel>
             <div className='flex gap-6 px-4 items-center'>
-              <p className='text-lg font-medium'>Download Brochures</p>
+              {/* <p className='text-lg font-medium'>Download Brochures</p>
               <button className='px-4 py-4 border border-black bg-white text-black text-md hover:shadow-[4px_4px_0px_0px_rgba(101,181,48)] transition duration-200 hover:text-green font-bold rounded-full shadow-md'>
                 <IoMdDownload size={24} />
-              </button>
+              </button> */}
+              <DownloadButton />
             </div>
           </Reavel>
         </div>

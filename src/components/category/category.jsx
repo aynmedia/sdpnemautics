@@ -50,7 +50,7 @@ function CategoryBento() {
               consistent support for all pneumatic solutions.
             </p>
             <Link
-              href={'/products/air-compressor'}
+              href='/products'
               className='flex items-center text-left mt-4 font-bold group-hover:text-white '>
               {' '}
               Read More
@@ -74,7 +74,7 @@ function CategoryBento() {
               highest industry standards and exceed customer expectations.
             </p>
             <Link
-              href={'/products/air-compressor'}
+              href='/products'
               className='flex items-center text-left mt-4 font-bold group-hover:text-white '>
               Read More
               <FaArrowCircleRight size={24} className='pl-2' />
@@ -98,7 +98,7 @@ function CategoryBento() {
               quick order fulfillment and on-time dispatch.
             </p>
             <Link
-              href={'/products/air-compressor'}
+              href='/products'
               className='flex items-center text-left mt-4 font-bold group-hover:text-white '>
               {' '}
               Read More
@@ -122,7 +122,7 @@ function CategoryBento() {
               of our clients.
             </p>
             <Link
-              href={'/products/air-compressor'}
+              href='/products'
               className='flex items-center text-left mt-4 font-bold group-hover:text-white'>
               {' '}
               Read More

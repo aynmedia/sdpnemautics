@@ -6,6 +6,7 @@ import { FaArrowCircleRight } from 'react-icons/fa';
 import { FaCircleCheck } from 'react-icons/fa6';
 import aboutsection from '../../../public/images/aboutsection.jpg';
 import Reavel from '@/lib/reveal';
+import Link from 'next/link';
 export const category = [
   'Air Compressors',
   'Dry Scroll Vacuum Pumps',
@@ -58,15 +59,19 @@ const About = () => {
         </div>
         <div className='flex mt-12 gap-4'>
           <Reavel>
-            <button className='px-6 py-4 rounded-md border border-black bg-green hover:bg-white text-white text-lg hover:shadow-[4px_4px_0px_0px_rgba(101,181,48)] transition duration-200 hover:text-green flex'>
-              Explore Our Products{' '}
-              <FaArrowCircleRight size={32} className='pl-2' />
-            </button>
+            <Link href='/products'>
+              <button className='px-6 py-4 rounded-md border border-black bg-green hover:bg-white text-white text-lg hover:shadow-[4px_4px_0px_0px_rgba(101,181,48)] transition duration-200 hover:text-green flex'>
+                Explore Our Products{' '}
+                <FaArrowCircleRight size={32} className='pl-2' />
+              </button>
+            </Link>
           </Reavel>
           <Reavel>
-            <button className='px-6 py-4 rounded-md border border-black bg-white text-black text-lg hover:shadow-[4px_4px_0px_0px_rgba(101,181,48)] transition duration-200 hover:text-green'>
-              More About US
-            </button>
+            <Link href='/about'>
+              <button className='px-6 py-5 rounded-md border border-black bg-white text-black text-lg hover:shadow-[4px_4px_0px_0px_rgba(101,181,48)] transition duration-200 hover:text-green'>
+                More About US
+              </button>
+            </Link>
           </Reavel>
         </div>
       </div>

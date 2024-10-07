@@ -14,6 +14,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { FaDownload } from 'react-icons/fa6';
 import Enquireproduct from './enquireproduct';
+import DownloadButton from './downloadbrochure';
 
 const Product = ({ products }) => {
   const [visibleProducts, setVisibleProducts] = useState(6);
@@ -37,15 +38,16 @@ const Product = ({ products }) => {
             <CardContent>
               <CardTitle>{product.title}</CardTitle>
             </CardContent>
-            <CardFooter>
-              <div className='flex gap-2 flex-wrap'>
+            <CardFooter className='flex justify-between flex-col'>
+              <div className='flex gap-2 text-sm items-center'>
                 <Enquireproduct
+                  className=''
                   triggerText='Get A Quote'
                   productName={product.title}
                 />
-                <Button variant='ghost' size='lg'>
-                  Brochure <FaDownload size={24} className='pl-2' />
-                </Button>
+                <DownloadButton />
+              </div>
+              <div className='flex gap-2 flex-wrap'>
                 {product.features.map((feature, index) => (
                   <Badge
                     key={index}

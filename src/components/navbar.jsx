@@ -16,8 +16,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/components/ui/sheet';
-import { Button } from './ui/button';
-import { FaDownload } from 'react-icons/fa6';
+import DownloadButton from './ui/downloadbrochure';
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,6 +36,10 @@ function Navbar() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const downloadBrochure = () => {
+    window.open('/SDPbrochure.pdf', '_blank');
+  };
 
   return (
     <div
@@ -79,15 +82,15 @@ function Navbar() {
             ))}
             {/* Download Brochure Button */}
             <li>
-              <Link href='/path-to-brochure.pdf' download className=''>
-                <Button
-                  variant=''
-                  size='lg'
-                  className='bg-green-600 text-green font-bold py-2 px-4 rounded-md hover:bg-green-500 transition duration-150 ease-in-out'>
-                  <FaDownload className='mr-2' />
-                  Download Brochure
-                </Button>
-              </Link>
+              <DownloadButton />
+              {/* <Button
+                onCLick={downloadBrochure}
+                variant='link'
+                size='lg'
+                className='bg-green-600 text-green font-bold py-2 px-4 rounded-md hover:bg-green-500 transition duration-150 ease-in-out'>
+                <FaDownload className='mr-2' />
+                Download Brochure
+              </Button> */}
             </li>
           </ul>
 
@@ -120,15 +123,7 @@ function Navbar() {
                 ))}
                 {/* Download Brochure Button in Mobile Menu */}
                 <div className='mt-6 text-center'>
-                  <Link href='/path-to-brochure.pdf' download className=''>
-                    <Button
-                      variant='outline'
-                      size='lg'
-                      className='bg-green-600 text-[#1E1C2A] font-bold py-2 px-4 rounded-md hover:bg-green-500 transition duration-150 ease-in-out'>
-                      <FaDownload className='mr-2' />
-                      Download Brochure
-                    </Button>
-                  </Link>
+                  <DownloadButton />
                 </div>
               </ul>
             </SheetContent>
